@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Squid Game - Red Light, Green Light</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Squid Game</h1>
+
+  <p>Time Left: <span id="timer">30</span> seconds</p>
+  <p id="score">Score: 0</p>
+
+  <div id="nameSection">
+    <label for="playerName">Enter your name:</label><br>
+    <input type="text" id="playerName" placeholder="Your name" /><br><br>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div class="game" style="display: none;">
+    <div id="player"></div>
+    <div id="goal">Goal</div>
+  </div>
+
+  <p id="status"></p>
+
+  <!-- Audio -->
+  <audio id="greenSound" src="sounds/squid-game-green-light.mp3"></audio>
+  <audio id="redSound" src="sounds/squid-game.mp3"></audio>
+  <audio id="loseSound" src="sounds/squid-game-gunshot.mp3"></audio>
+  <audio id="winSound" src="sounds/squid-game-tone.mp3"></audio>
+  <audio id="bgMusic" src="sounds/squid-game-s2.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
